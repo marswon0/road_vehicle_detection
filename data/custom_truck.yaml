@@ -1,7 +1,8 @@
-train: ..\..\dataset-truck\images\train  # train images (relative to 'path') 128 images
-val: ..\..\dataset-truck\images\val  # val images (relative to 'path') 128 images
+train: ..\assets\dataset\dataset-truck\images\train  # train images (relative to 'path') 11 images
+val: ..\assets\dataset\dataset-truck\images\val  # val images (relative to 'path') 4 images
 
 # Classes
 nc: 1  # number of classes
 names: ['truck']  # class names
+
 
