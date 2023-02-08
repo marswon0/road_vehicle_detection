@@ -29,6 +29,10 @@ Consider to use the following commands to train the model:
 
     python train.py --img 640 --batch 16 --epochs 50 --data custom_vehicle.yaml --weights best.pt
 
+### YOLOv5 Model
+
+For more details about the YOLOv5 model, please visit the [official Github page](https://github.com/ultralytics/yolov5).
+
 ## Model Architecture
 
 ### Model Backbone
@@ -49,7 +53,7 @@ The model neck generates the feature pyramid that helps to generalize scaling fo
 
 The model head performs the final prediction on objects that includes bounding box locations, object labels, and probability for each object classes.
 
-<img src="/Assets/Images/model.JPG" width="650" height="850">
+<img src="/assets/images/model.JPG" width="650" height="850">
 
 - i: input channel
 - o: output channel
@@ -66,25 +70,26 @@ The [custom dataset](https://b2n.ir/vehicleDataset) used in this project has 132
 
 The YOLOv5 model is pretrained with the COCO dataset that has more than 200K labelled images, 1.5 million object instances, and 80 object categories. Although the COCO dataset includes images for all type of vehicles appeared in the custom dataset, the model had a poor performance in recognizing motorcycle, truck, bus, and bicycle at a 0.157 mAP without fine tuning. Most of the misclassified objects were recognized as either car or background.
 
-<img src="/Assets/Images/fine_tuning.JPG">
+<img src="/assets/images/fine_tuning.JPG">
 
 ## Performance of different YOLOv5 models
 
 YOLOv5 models with different sizes are trained and validated using the same dataset. The training epoch on each model is set to 50. The performance of each model is concluded in table below.
 
-<img src="/Assets/Images/diff_models.JPG" width="600" height="160">
+<img src="/assets/images/diff_models.JPG" width="600" height="160">
 
 
 ## Two-stage Training Strategy
 
 There are multiple factors that affect the detection accuracy of the YOLOv5 models. Samples contained in the dataset is mostly cars rather other types of vehicles. This indicates imbalance data between object classes. The number of cars vs. other vehicles is at a 10~20:1 ratio. This imbalance causes the model to focus on the car detection rather than other vehicles.
 
-<img src="/Assets/Images/imba.jpg" width="600" height="600">
+<img src="/assets/images/imba.jpg" width="600" height="600">
 
 To increase the accuracy for recognizing a particular type of vehicle, a 2-stage training method was adapted. In stage one, the YOLOv5s model will be trained with only truck samples (15 images) as an independent dataset for 50 epochs. In state two, the YOLOv5s model will be further trained on the same dataset (1321 images) foranother 15 epochs. The results showed the AP for truck object increased from 0.438 to 0.5 after the 2-stage training. The overall model performance increased slightly. 
 
-<img src="/Assets/Images/2_stage.JPG">
+<img src="/assets/images/2_stage.JPG">
 
 ## Vehicle Detection Results
 
-<img src="/Assets/Images/result.jpg">
+<img src="/assets/images/result.jpg">
+
