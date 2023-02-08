@@ -31,7 +31,7 @@ Consider to use the following commands to train the model:
 
 ### YOLOv5 Model
 
-For more details about the YOLOv5 model, please visit the [official Github page](https://github.com/ultralytics/yolov5).
+For more details about the YOLOv5 model, please visit the [official YOLOv5 Github page](https://github.com/ultralytics/yolov5).
 
 ## Model Architecture
 
@@ -93,3 +93,6 @@ To increase the accuracy for recognizing a particular type of vehicle, a 2-stage
 
 <img src="/assets/images/result.jpg">
 
+## Reference
+
+For more information about this project, please check out this [paper](https://github.com/marswon0/road_vehicle_detection/blob/main/assets/paper/Road%20Vehicle%20Detection%20Through%20YOLOv5.pdf).
