@@ -1,0 +1,7 @@
+train: location_of_your_dataset\train  # train images (relative to 'path') 128 images
+val: location_of_your_dataset\val  # val images (relative to 'path') 128 images
+
+# Classes
+nc: 5  # number of classes
+names: ['car','motorcycle','truck','bus','bicycle']  # class names
+
