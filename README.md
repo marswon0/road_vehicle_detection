@@ -91,6 +91,8 @@ To increase the accuracy for recognizing a particular type of vehicle, a 2-stage
 
 ## Vehicle Detection Results
 
+<img src="/assets/images/result2.jpg">
+
 <img src="/assets/images/result.jpg">
 
 ## Reference
