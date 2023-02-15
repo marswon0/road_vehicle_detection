@@ -97,4 +97,4 @@ To increase the accuracy for recognizing a particular type of vehicle, a 2-stage
 
 ## Reference
 
-For more information about this project, please check out this [paper](https://github.com/marswon0/road_vehicle_detection/blob/main/assets/paper/Road%20Vehicle%20Detection%20Through%20YOLOv5.pdf).
+For more information about this project, please check out this [report paper](https://github.com/marswon0/road_vehicle_detection/blob/main/assets/paper/Road%20Vehicle%20Detection%20Through%20YOLOv5.pdf).
