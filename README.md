@@ -7,9 +7,9 @@ time. This project focuses on the road vehicle detection problem which is part o
 
 The performance of the YOLOv5 model is directly proportional to the quality of the training data: the number of instances of each target object, the quality and consistency of the labeling. This project demonstrates the Average Precision (AP) of a single object class could be improved by using the proposed two-stage training technique; in the 2nd training stage, a well labeled dataset with less than 30 images improved the detection accuracy for trucks by 8%.
 
-## More details about this project
+## Reference
 
-For more details and references, please check out [the report paper written for this project](https://github.com/marswon0/road_vehicle_detection/blob/main/assets/paper/Road%20Vehicle%20Detection%20Through%20YOLOv5.pdf).
+For more details please check out [the report paper written for this project](https://github.com/marswon0/road_vehicle_detection/blob/main/assets/paper/Road%20Vehicle%20Detection%20Through%20YOLOv5.pdf).
 
 
 ## Usage
