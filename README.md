@@ -18,7 +18,7 @@ For more details and references, please check out [the report paper written for 
 
 Change the file addresses used in '/data/custom_dataset.yaml' and '/data/custom_truck.yaml' to the actual location of the datasets.
 
-### Standard Training
+### Standard training
 
 Consider to use the following commands to train the model:
     
