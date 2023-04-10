@@ -28,13 +28,16 @@ Consider to use the following commands to train the model:
 
 1. Train the selected model on the first dataset using the command below :
 
+    ```
     python train.py --img 640 --batch 16 --epochs 50 --data custom_truck.yaml --weights yolov5s.pt
+    ```
 
 2. In the "project\runs\train\exp\weights" folder, copy the "best.pt" file
 3. Paste the "best.pt" file under the project folder
 4. Train the selected model with the next dataset
-
+    ```
     python train.py --img 640 --batch 16 --epochs 50 --data custom_vehicle.yaml --weights best.pt
+    ```
 
 ### YOLOv5 Model
 
